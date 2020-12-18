@@ -1,0 +1,320 @@
+[
+	{
+		"type": "stepper",
+		"fieldGroup": [
+			{
+				"templateOptions": {
+					"label": "Patient Details"
+				},
+				"wrappers": [
+					"accwrap"
+				],
+				"fieldGroup": [
+					{
+						"templateOptions": {
+							"label": "Patient Summary",
+							"description": "Patient Demographics"
+						},
+						"wrappers": [
+							"panel"
+						],
+						"fieldGroup": [
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "firstname",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "First Name",
+											"addonRight": {
+												"icon": "coronavirus"
+											}
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "lastname",
+										"templateOptions": {
+											"label": "Last Name"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "middlename",
+										"templateOptions": {
+											"label": "Middle Name"
+										}
+									}
+								]
+							},
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "age",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "Age"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "gender",
+										"templateOptions": {
+											"label": "Gender"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "newcomments",
+										"templateOptions": {
+											"label": "New Comments"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"templateOptions": {
+							"label": "Vitals",
+							"description": "Vital Signs"
+						},
+						"wrappers": [
+							"panel"
+						],
+						"fieldGroup": [
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "bp",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "Blood Pressure"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "temperature",
+										"templateOptions": {
+											"label": "Temperature"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "pulse",
+										"templateOptions": {
+											"label": "Pulse Rate"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"templateOptions": {
+					"label": "Admission Information"
+				},
+				"wrappers": [
+					"accwrap"
+				],
+				"fieldGroup": [
+					{
+						"templateOptions": {
+							"label": "Admission Details",
+							"description": "Admission related information"
+						},
+						"wrappers": [
+							"panel"
+						],
+						"fieldGroup": [
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "datepicker",
+										"key": "admit",
+										"templateOptions": {
+											"required": true,
+											"label": "Admission Date"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "reason",
+										"templateOptions": {
+											"label": "Admission Reason"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "type",
+										"templateOptions": {
+											"label": "Admission Type"
+										}
+									}
+								]
+							},
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "datepicker",
+										"key": "dischargedt",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "Discharge Date"
+										}
+									},
+									{
+										"className": "flex-2",
+										"type": "input",
+										"key": "comments",
+										"templateOptions": {
+											"label": "Comments on Discharge"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"templateOptions": {
+							"label": "Diagnosis Details",
+							"description": "Patient Empirical and Final Diagnosis"
+						},
+						"wrappers": [
+							"panel"
+						],
+						"fieldGroup": [
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "datepicker",
+										"key": "stagediagdt",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "Date of Diagnosis"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "tdiag",
+										"templateOptions": {
+											"label": "Diagnosis"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "ndiag",
+										"templateOptions": {
+											"label": "Disease Progression"
+										}
+									}
+								]
+							},
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "mdiag",
+										"templateOptions": {
+											"type": "text",
+											"label": "Addl. Diagnosis"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "datepicker",
+										"key": "stagesurgerydt",
+										"templateOptions": {
+											"label": "Date of Surgery (if any)"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "tsurgery",
+										"templateOptions": {
+											"label": "Recovery Details"
+										}
+									}
+								]
+							},
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "textarea",
+										"key": "notes",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "Notes"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

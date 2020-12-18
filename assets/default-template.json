@@ -1,0 +1,438 @@
+[
+	{
+		"type": "stepper",
+		"fieldGroup": [
+			{
+				"templateOptions": {
+					"label": "Patient Information"
+				},
+				"wrappers": [
+					"accwrap"
+				],
+				"fieldGroup": [
+					{
+						"templateOptions": {
+							"label": "Patient History",
+							"description": "Patients Past History"
+						},
+						"wrappers": [
+							"panel"
+						],
+						"fieldGroup": [
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "smokeho",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "Smoking History",
+											"addonRight": {
+												"icon": "coronavirus"
+											}
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "smokehoyr",
+										"templateOptions": {
+											"label": "Smoking History Years"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "hocancer",
+										"templateOptions": {
+											"label": "Prior History of Cancer"
+										}
+									}
+								]
+							},
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "hocancerdiag",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "History of Cancer Diagnosis (Organ)"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "hocomorbid",
+										"templateOptions": {
+											"label": "History of Comorbidity"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "hocomorbidcond",
+										"templateOptions": {
+											"label": "History of Comorbid Conditions"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"templateOptions": {
+							"label": "Vitals",
+							"description": "Vital Parameters"
+						},
+						"wrappers": [
+							"panel"
+						],
+						"fieldGroup": [
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "height",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "Height"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "weight",
+										"templateOptions": {
+											"label": "Weight"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "bmi",
+										"templateOptions": {
+											"label": "BMI"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"templateOptions": {
+					"label": "Cancer Information"
+				},
+				"wrappers": [
+					"accwrap"
+				],
+				"fieldGroup": [
+					{
+						"templateOptions": {
+							"label": "Cancer Data",
+							"description": "Cancer Diagnosis Details"
+						},
+						"wrappers": [
+							"panel"
+						],
+						"fieldGroup": [
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "datepicker",
+										"key": "cancerdiagdt",
+										"templateOptions": {
+											"required": true,
+											"label": "Cancer Diagnosis Date"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "cancerorgan",
+										"templateOptions": {
+											"label": "Cancer Diagnosis (Organ/Cohort)"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "histotype",
+										"templateOptions": {
+											"label": "Histology Type"
+										}
+									}
+								]
+							},
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "datepicker",
+										"key": "metacancerdiagdate",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "Metastatic Cancer Diagnosis Date"
+										}
+									},
+									{
+										"className": "flex-2",
+										"type": "input",
+										"key": "metasite",
+										"templateOptions": {
+											"label": "Metastatic Site (Anatomic Site or Diagnosis)"
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"templateOptions": {
+							"label": "Stage Data",
+							"description": "TNM Staging"
+						},
+						"wrappers": [
+							"panel"
+						],
+						"fieldGroup": [
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "datepicker",
+										"key": "stagediagdt",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "Date of Stage Diagnosis"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "tdiag",
+										"templateOptions": {
+											"label": "T Stage at Diagnosis"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "ndiag",
+										"templateOptions": {
+											"label": "N Stage at Diagnosis"
+										}
+									}
+								]
+							},
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "mdiag",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "M Stage at Diagnosis"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "datepicker",
+										"key": "stagesurgerydt",
+										"templateOptions": {
+											"label": "Date of Stage at Surgery"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "tsurgery",
+										"templateOptions": {
+											"label": "T Stage at Surgery"
+										}
+									}
+								]
+							},
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "nsurgery",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "N Stage at Surgery"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "msurgery",
+										"templateOptions": {
+											"label": "M Stage at Surgery"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "stagegroupdiag",
+										"templateOptions": {
+											"label": "Stage Group at Diagnosis (I-IV)"
+										}
+									}
+								]
+							},
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "stagegroupsurgery",
+										"templateOptions": {
+											"required": true,
+											"type": "text",
+											"label": "Stage Group at Surgery (I-IV)"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "stagesystem",
+										"templateOptions": {
+											"label": "Stage System"
+										}
+									},
+									{
+										"className": "flex-1",
+										"type": "",
+										"key": "dummy",
+										"templateOptions": {
+											"label": ""
+										}
+									}
+								]
+							}
+						]
+					},
+					{
+						"templateOptions": {
+							"label": "Tumor Data",
+							"description": "Tumor Details"
+						},
+						"wrappers": [
+							"panel"
+						],
+						"fieldGroup": [
+							{
+								"wrappers": [
+									"rowwrap"
+								],
+								"fieldGroupClassName": "display-flex",
+								"fieldGroup": [
+									{
+										"className": "flex-1",
+										"type": "input",
+										"key": "lesionsize",
+										"templateOptions": {
+											"label": "Size of Representative Lesions"
+										}
+									},
+									{
+										"className": "flex-2",
+										"type": "textarea",
+										"key": "cancerorgan",
+										"templateOptions": {
+											"label": "Tumor Behavior"
+										}
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			{
+				"templateOptions": {
+					"label": "Molecular Pathology"
+				},
+				"wrappers": [
+					"accwrap"
+				]
+			},
+			{
+				"templateOptions": {
+					"label": "Imaging and Labs"
+				},
+				"wrappers": [
+					"accwrap"
+				]
+			},
+			{
+				"templateOptions": {
+					"label": "Therapy Information"
+				},
+				"wrappers": [
+					"accwrap"
+				]
+			},
+			{
+				"templateOptions": {
+					"label": "Outcomes"
+				},
+				"wrappers": [
+					"accwrap"
+				]
+			}
+		]
+	}
+]
